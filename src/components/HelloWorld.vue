@@ -1,9 +1,24 @@
 <template>
+  <div class="page-container">
   <div class="hello">
-    <h1>Random Fact:</h1>
-    <button @click="fetchData">Click Me!</button>
-    <p v-if="fact">{{ fact }}</p>
-    <p v-else>No fact yet. Click the button to fetch!</p>
+    <h1>All Courses and Grades:</h1>
+    <button @click="fetchData">Fetch Courses</button>
+    <div v-if="fact.length > 0">
+      <ul>
+        <!-- Loop through studies -->
+        <li v-for="study in fact" :key="study.id">
+          <strong>{{ study.studyName }}</strong>
+          <ul>
+            <!-- Loop through courses in each study -->
+            <li v-for="course in study.courses" :key="course.id">
+              {{ course.name }} - Grade: {{ course.grade }}
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <p v-else>Click the button to fetch! (It can take some time for it to load, please be patient)</p>
+  </div>
   </div>
 </template>
 
@@ -23,7 +38,7 @@ export default {
         }
         const data = await response.json();
         console.log(data);
-        this.fact = data[0].studyName || "No data available"; 
+        this.fact = data || "No data available"; 
       } catch (err) {
         console.error("Failed to fetch data:", err.message);
         this.fact = "Error fetching data. Please try again.";
@@ -34,6 +49,11 @@ export default {
 </script>
 
 <style>
+.hello {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 button {
   padding: 12px 32px;
   font-size: 16px;
@@ -48,6 +68,5 @@ button:hover {
 }
 p {
   font-size: 18px;
-  margin-top: 12px;
 }
 </style>

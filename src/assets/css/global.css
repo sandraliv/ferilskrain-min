@@ -1,0 +1,38 @@
+/* src/assets/global.css */
+
+/* Reset margins and paddings */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Universal box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Default styles for body */
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9f9f9; /* Optional background */
+  color: #333; /* Default text color */
+}
+
+/* Utility classes (optional) */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page-container {
+  min-height: calc(100vh - 182.5px);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
