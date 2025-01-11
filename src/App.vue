@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <HeaderComponent></HeaderComponent>
-    <router-view></router-view> <!-- Dynamic content will render here -->
+    <router-view></router-view>
+    <!-- Dynamic content will render here -->
     <FooterComponent></FooterComponent>
   </div>
 </template>
@@ -19,6 +20,4 @@ export default {
 };
 </script>
 
-<style>
-/* Global styles for App.vue */
-</style>
+<style></style>

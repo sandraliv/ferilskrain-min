@@ -9,8 +9,8 @@ module.exports = defineConfig({
   configureWebpack: {
     plugins: [
       new webpack.DefinePlugin({
-        '__VUE_PROD_DEVTOOLS__': JSON.stringify(false), // Disable Vue DevTools in production
-        '__VUE_PROD_HYDRATION_MISMATCH_DETAILS__': JSON.stringify(false), // Disable hydration mismatch details
+        __VUE_PROD_DEVTOOLS__: JSON.stringify(false), // Disable Vue DevTools in production
+        __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: JSON.stringify(false), // Disable hydration mismatch details
       }),
     ],
   },
