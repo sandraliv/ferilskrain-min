@@ -1,23 +1,34 @@
 <template>
-  <div id="app">
-    <HeaderComponent></HeaderComponent>
-    <router-view></router-view>
-    <!-- Dynamic content will render here -->
-    <FooterComponent></FooterComponent>
+  <HeaderComponent></HeaderComponent>
+  <div class="page-container">
+    <div class="contains">
+      <router-view> </router-view>
+    </div>
   </div>
+
+  <FooterComponent></FooterComponent>
 </template>
 
-<script>
-import FooterComponent from './components/Footer.vue';
-import HeaderComponent from './components/Header.vue';
+<script lang="ts">
+import { defineComponent } from "vue";
+import HeaderComponent from "./components/Header.vue";
+import FooterComponent from "./components/Footer.vue";
 
-export default {
-  name: 'App',
+export default defineComponent({
+  name: "App",
   components: {
-    FooterComponent,
     HeaderComponent,
+    FooterComponent,
   },
-};
+});
 </script>
 
-<style></style>
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+</style>

@@ -1,75 +1,59 @@
 <template>
-  <div class="page-container">
-    <div class="hello">
-      <h1>All Courses and Grades:</h1>
-      <button @click="fetchData">Fetch Courses</button>
-      <div v-if="fact.length > 0">
-        <ul>
-          <!-- Loop through studies -->
-          <li v-for="study in fact" :key="study.id">
-            <strong>{{ study.studyName }}</strong>
-            <ul>
-              <!-- Loop through courses in each study -->
-              <li v-for="course in study.courses" :key="course.id">
-                {{ course.name }} - Grade: {{ course.grade }}
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <p v-else>
-        Click the button to fetch! (It can take some time for it to load, please
-        be patient)
-      </p>
-    </div>
+  <div class="hello">
+    <h1>{{ msg }}</h1>
+    <p>
+      For a guide and recipes on how to configure / customize this project,<br>
+      check out the
+      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
+    </p>
+    <h3>Installed CLI Plugins</h3>
+    <ul>
+      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript" target="_blank" rel="noopener">typescript</a></li>
+    </ul>
+    <h3>Essential Links</h3>
+    <ul>
+      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
+      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
+      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
+      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
+      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
+    </ul>
+    <h3>Ecosystem</h3>
+    <ul>
+      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
+      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
+    </ul>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      fact: '',
-    };
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'HelloWorld',
+  props: {
+    msg: String,
   },
-  methods: {
-    async fetchData() {
-      try {
-        const response = await fetch('https://ferilskra.onrender.com/studies');
-        if (!response.ok) {
-          throw new Error(`Error: ${response.status} ${response.statusText}`);
-        }
-        const data = await response.json();
-        console.log(data);
-        this.fact = data || 'No data available';
-      } catch (err) {
-        console.error('Failed to fetch data:', err.message);
-        this.fact = 'Error fetching data. Please try again.';
-      }
-    },
-  },
-};
+});
 </script>
 
-<style>
-.hello {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+h3 {
+  margin: 40px 0 0;
 }
-button {
-  padding: 12px 32px;
-  font-size: 16px;
-  border-radius: 8px;
-  background-color: #42b983;
-  color: white;
-  border: none;
-  cursor: pointer;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
-button:hover {
-  background-color: #2c7a6f;
+li {
+  display: inline-block;
+  margin: 0 10px;
 }
-p {
-  font-size: 18px;
+a {
+  color: #42b983;
 }
 </style>

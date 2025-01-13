@@ -1,0 +1,352 @@
+{
+  "study": {
+    "Tölvunarfræði": {
+      "slug": "tolvunarfraedi",
+      "classes": [
+        {
+          "name": "Almenn félagsráðgjöf: Saga, kenningar og fagþróun",
+          "id": "FRG101G",
+          "grade": 8.5,
+          "credits": 6,
+          "semester": "des, 2018"
+        },
+        {
+          "name": "Kenningar um mannlega hegðun, ytri og innri mótunarþættir",
+          "id": "FRG102G",
+          "grade": 9.5,
+          "credits": 6,
+          "semester": "des, 2018"
+        },
+        {
+          "name": "Áfengis- og vímuefnamál",
+          "id": "FRG103G",
+          "grade": 7.5,
+          "credits": 6,
+          "semester": "des, 2018"
+        },
+        {
+          "name": "Akademísk vinnubrögð",
+          "id": "FRG104G",
+          "grade": 8.5,
+          "credits": 4,
+          "semester": "des, 2018"
+        },
+        {
+          "name": "Félagsráðgjöf og íslenskt þjóðfélag",
+          "id": "FRG109G",
+          "grade": 8.0,
+          "credits": 8,
+          "semester": "des, 2018"
+        },
+        {
+          "name": "Aðferðafræði: Rannsóknaraðferðir félagsvísinda",
+          "id": "FÉL204G",
+          "grade": 8.5,
+          "credits": 8,
+          "semester": "maí, 2019"
+        },
+        {
+          "name": "Félagsmálastefnur - velferð og vandi",
+          "id": "FRG202G",
+          "grade": 7.0,
+          "credits": 6,
+          "semester": "maí, 2019"
+        },
+        {
+          "name": "Fjölskyldur og fjölskyldustefna",
+          "id": "FRG204G",
+          "grade": 8.5,
+          "credits": 6,
+          "semester": "maí, 2019"
+        },
+        {
+          "name": "Lífsskeiðakenningar og þroskaferli",
+          "id": "FRG206G",
+          "grade": 7.5,
+          "credits": 6,
+          "semester": "maí, 2019"
+        },
+        {
+          "name": "Áföll, sorg og sálræn skyndihjálp",
+          "id": "FRG205G",
+          "grade": 8.5,
+          "credits": 4,
+          "semester": "maí, 2019"
+        },
+        {
+          "name": "Tölfræði I: Inngangur",
+          "id": "FÉL306G",
+          "grade": 8.5,
+          "credits": 8,
+          "semester": "maí, 2019"
+        },
+        {
+          "name": "Fjölmenningarfélagsráðgjöf",
+          "id": "FRG501G",
+          "grade": 7.5,
+          "credits": 4,
+          "semester": "maí, 2019"
+        },
+        {
+          "name": "Atvinnuleysi og starfsendurhæfing",
+          "id": "FRG306G",
+          "grade": 9.0,
+          "credits": 4,
+          "semester": "des, 2019"
+        },
+        {
+          "name": "Fjármálameðferð",
+          "id": "FRG313G",
+          "grade": 9.5,
+          "credits": 4,
+          "semester": "des, 2019"
+        },
+        {
+          "name": "Félagsmálalöggjöf I: Framkvæmd og beiting",
+          "id": "FRG314G",
+          "grade": 8.0,
+          "credits": 6,
+          "semester": "des, 2019"
+        },
+        {
+          "name": "Réttarfélagsráðgjöf",
+          "id": "FRG316G",
+          "grade": 8.0,
+          "credits": 4,
+          "semester": "des, 2019"
+        },
+        {
+          "name": "Tölfræði II: Gagnagreining",
+          "id": "FÉL416G",
+          "grade": 9.5,
+          "credits": 8,
+          "semester": "maí, 2020"
+        },
+
+        {
+          "name": "Öldrun og málefni aldraðra",
+          "id": "FRG401G",
+          "grade": 9.0,
+          "credits": 6,
+          "semester": "maí, 2020"
+        },
+        {
+          "name": "Félagsmálalöggjöf II: Um málsmeðferð og réttindi skjólstæðinga",
+          "id": "FRG406G",
+          "grade": 9.0,
+          "credits": 6,
+          "semester": "maí, 2020"
+        },
+        {
+          "name": "Teymi og þverfaglegt samstarf",
+          "id": "FRG413G",
+          "grade": 9.5,
+          "credits": 4,
+          "semester": "maí, 2020"
+        },
+        {
+          "name": "Ofbeldi og vanræksla í fjölskyldum",
+          "id": "FRG408G",
+          "grade": 8.5,
+          "credits": 6,
+          "semester": "maí, 2020"
+        },
+        {
+          "name": "Félagsráðgjöf á heilbrigðissviði",
+          "id": "FRG412G",
+          "grade": 8.0,
+          "credits": 4,
+          "semester": "maí, 2020"
+        },
+        {
+          "name": "Samfélagsvinna og notendasamráð",
+          "id": "FRG504G",
+          "grade": 9.0,
+          "credits": 8,
+          "semester": "des, 2020"
+        },
+        {
+          "name": "Inngangur að eigindlegum rannsóknaraðferðum",
+          "id": "FRG508G",
+          "grade": 9.0,
+          "credits": 8,
+          "semester": "des, 2020"
+        },
+        {
+          "name": "Fötlun og samfélag",
+          "id": "FRG509G",
+          "grade": 8.5,
+          "credits": 4,
+          "semester": "des, 2020"
+        },
+        {
+          "name": "Jákvæð sálfræði og velferð",
+          "id": "UME102M",
+          "grade": 9.5,
+          "credits": 10,
+          "semester": "des, 2020"
+        },
+        {
+          "name": "Skólafélagsráðgjöf",
+          "id": "FRG315G",
+          "grade": 8.0,
+          "credits": 4,
+          "semester": "des, 2020"
+        },
+        {
+          "name": "Stjórnun",
+          "id": "FRG603G",
+          "grade": 8.5,
+          "credits": 8,
+          "semester": "maí, 2021"
+        },
+        {
+          "name": "Félagsmálalöggjöf III: Barnavernd, fjölskyldu- og erfðaréttur",
+          "id": "FRG605G",
+          "grade": 8.0,
+          "credits": 6,
+          "semester": "maí, 2021"
+        },
+        {
+          "name": "BA ritgerð í félagsráðgjöf",
+          "id": "FRG261L",
+          "grade": 8.5,
+          "credits": 12,
+          "semester": "maí, 2021"
+        }
+      ]
+    },
+    "Félagsráðgjöf": {
+      "slug": "felagsradgjof",
+      "classes": [
+        {
+          "name": "Greining og hönnun stafrænna rása",
+          "id": "TÖV201G",
+          "grade": 8.0,
+          "credits": 6,
+          "semester": "maí, 2022"
+        },
+        {
+          "name": "Greining og hönnun stafrænna rása - verklegt",
+          "id": "STÆ202G",
+          "grade": 9.5,
+          "credits": 2,
+          "semester": "júní, 2022"
+        },
+        {
+          "name": "Líkindareikningur og tölfræði",
+          "id": "STÆ203G",
+          "grade": 5.5,
+          "credits": 6,
+          "semester": "júní, 2022"
+        },
+        {
+          "name": "Tölvunarfræði 1",
+          "id": "TÖL101G",
+          "grade": 8.0,
+          "credits": 6,
+          "semester": "des, 2022"
+        },
+
+        {
+          "name": "Stærðfræðimynstur",
+          "id": "TÖL104G",
+          "grade": 8.0,
+          "credits": 8,
+          "semester": "des, 2022"
+        },
+        {
+          "name": "Vefforritun 1",
+          "id": "TÖL107G",
+          "grade": 9.0,
+          "credits": 8,
+          "semester": "des, 2022"
+        },
+        {
+          "name": "Hagnýt stærðfræðigreining",
+          "id": "STÆ105G",
+          "grade": 7.5,
+          "credits": 8,
+          "semester": "des, 2022"
+        },
+        {
+          "name": "Viðmótsforritun",
+          "id": "HBV201G",
+          "grade": 9.0,
+          "credits": 8,
+          "semester": "maí, 2023"
+        },
+        {
+          "name": "Stærðfræði og reiknifræði",
+          "id": "REI201G",
+          "grade": 8.0,
+          "credits": 8,
+          "semester": "maí, 2023"
+        },
+        {
+          "name": "Tölvunarfræði 2",
+          "id": "TÖL203G",
+          "grade": 8.0,
+          "credits": 6,
+          "semester": "maí, 2023"
+        },
+        {
+          "name": "Gagnasafnsfræði",
+          "id": "TÖL303G",
+          "grade": 9.0,
+          "credits": 6,
+          "semester": "des, 2023"
+        },
+        {
+          "name": "Forritunarmál",
+          "id": "TÖL304G",
+          "grade": 8.0,
+          "credits": 6,
+          "semester": "des, 2023"
+        },
+        {
+          "name": "Formleg mál og reiknanleiki",
+          "id": "TÖL301G",
+          "grade": 6.0,
+          "credits": 6,
+          "semester": "des, 2023"
+        },
+        {
+          "name": "Tölvutækni og forritun",
+          "id": "TÖL309G",
+          "grade": 10.0,
+          "credits": 6,
+          "semester": "des, 2023"
+        },
+        {
+          "name": "Þróun hugbúnaðar",
+          "id": "HBV401G",
+          "grade": 7.0,
+          "credits": 6,
+          "semester": "maí, 2024"
+        },
+        {
+          "name": "Stýrikerfi",
+          "id": "TÖL401G",
+          "grade": 7.5,
+          "credits": 6,
+          "semester": "maí, 2024"
+        },
+        {
+          "name": "Greining reiknirita",
+          "id": "TÖL403G",
+          "grade": 7.0,
+          "credits": 6,
+          "semester": "maí, 2024"
+        },
+        {
+          "name": "Hugbúnaðarverkefni 1",
+          "id": "TÖL104G",
+          "grade": 8.0,
+          "credits": 6,
+          "semester": "des, 2024"
+        }
+      ]
+    }
+  }
+}

@@ -5,14 +5,20 @@
 
       <div class="flexed">
         <h1>Sandra Liv Sigurðardóttir</h1>
-        <p>3. ár tölvunarfræði</p>
+        <p>{{ $t("header.me") }}</p>
       </div>
     </div>
     <nav>
       <ul class="nav-links">
-        <li><a href="about_me">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="jobs">Contact</a></li>
+        <li>
+          <router-link to="/">{{ $t("header.home") }}</router-link>
+        </li>
+        <li>
+          <router-link to="skoli">{{ $t("header.school") }}</router-link>
+        </li>
+        <li>
+          <router-link to="jobs">{{ $t("header.work") }}</router-link>
+        </li>
       </ul>
     </nav>
   </header>
@@ -34,7 +40,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2c3e50;
   background-image: linear-gradient(-90deg, #0f2f4e, #7f7e85);
   color: #fff;
   padding: 10px 20px; /* Adjust padding as needed */

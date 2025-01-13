@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'FooterComponent',
+  name: "FooterComponent",
   data() {
     return {
       currentYear: new Date().getFullYear(),
@@ -30,10 +30,10 @@ export default {
   color: white;
   text-align: center;
   padding: 1rem 0;
-  position: relative;
   bottom: 0;
   width: 100%;
   font-size: 14px;
+  position: relative; /* Ensure it's part of the normal document flow */
 }
 .footer a {
   color: #42b983;
