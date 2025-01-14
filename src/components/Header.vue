@@ -19,6 +19,14 @@
         <li>
           <router-link to="jobs">{{ $t("header.work") }}</router-link>
         </li>
+        <li>
+          <img
+            id="lang_logo"
+            :src="logoLanguage()"
+            @click="changeLanguage()"
+            alt="Logo"
+          />
+        </li>
       </ul>
     </nav>
   </header>
@@ -31,11 +39,26 @@ export default {
     redirectToHome() {
       this.$router.push("/"); // Navigate to the home route
     },
+    logoLanguage() {
+      return this.$i18n.locale === "is"
+        ? require("@/assets/world.png")
+        : require("@/assets/united-kingdom.png");
+    },
+    changeLanguage() {
+      this.$i18n.locale === "is"
+        ? (this.$i18n.locale = "en")
+        : (this.$i18n.locale = "is");
+    },
   },
 };
 </script>
 
 <style scoped>
+#lang_logo {
+  width: 30px;
+  height: 30px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -45,7 +68,7 @@ header {
   padding: 10px 20px; /* Adjust padding as needed */
   position: sticky;
   top: 0; /* Makes it stick to the top of the viewport */
-  z-index: 1000;
+  font-family: newFont;
 }
 
 .logo {
@@ -85,8 +108,13 @@ header {
   gap: 15px;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
 .nav-links li a {
   color: #fff;
   text-decoration: none;

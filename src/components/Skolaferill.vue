@@ -13,7 +13,7 @@
           role="button"
           @click="toggleStudy(1)"
         >
-          Tölvunarfræði
+          {{ $t("namsferill.CS") }}
         </button>
         <button
           class="button-67"
@@ -21,20 +21,20 @@
           role="button"
           @click="toggleStudy(0)"
         >
-          Félagsráðgjöf
+          {{ $t("namsferill.FR") }}
         </button>
       </div>
       <div v-if="whichStudy === 1" class="download-section">
         <button class="button-67 new-button" @click="downloadFile(0)">
-          Hlaða niður pdf
+          {{ $t("namsferill.PDF") }}
         </button>
       </div>
       <div v-else class="buttons new-ones">
         <button class="button-67 new-button" @click="downloadFile(1)">
-          Hlaða niður námsferil
+          {{ $t("namsferill.PDF") }}
         </button>
         <button class="button-67 new-button" @click="downloadFile(2)">
-          Hlaða niður prófskírteini
+          {{ $t("namsferill.profskirteini") }}
         </button>
       </div>
     </div>
