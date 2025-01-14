@@ -1,5 +1,5 @@
 # Use a newer Node.js version
-FROM node:18 AS build-stage
+FROM node:22 AS build-stage
 
 # Set the working directory
 WORKDIR /app
