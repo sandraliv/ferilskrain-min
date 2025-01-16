@@ -25,7 +25,7 @@ export default {
 <style scoped>
 .footer {
   background-color: #2c3e50; /* Dark footer background */
-  background-image: linear-gradient(90deg, #2c3e50, #696485);
+  background-image: linear-gradient(-90deg, #0f2f4e, #7f7e85);
   color: white;
   text-align: center;
   bottom: 0;

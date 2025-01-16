@@ -1,7 +1,7 @@
 <template>
   <HeaderComponent></HeaderComponent>
   <div class="page-container">
-    <div class="contains">
+    <div class="contains" :style="dynamicStyle">
       <router-view> </router-view>
     </div>
   </div>
@@ -19,6 +19,26 @@ export default defineComponent({
   components: {
     HeaderComponent,
     FooterComponent,
+  },
+  data() {
+    return {
+      backgroundImage: "linear-gradient(-90deg, #0f2f4e, #7f7e85)",
+      color: "white"
+    };
+  },
+  computed: {
+    where_am_i(): boolean {
+      return this.$route.name === 'Home'
+    },
+    dynamicStyle() {
+      // Dynamically generate styles based on where i am
+      return {
+        backgroundImage: this.where_am_i
+          ? this.backgroundImage
+          : "none",
+          color: this.color
+      };
+    },
   },
 });
 </script>

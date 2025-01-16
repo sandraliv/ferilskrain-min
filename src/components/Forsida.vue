@@ -87,7 +87,10 @@ export default {
   font-size: 30px;
   padding: 0;
   margin: 0;
+  color: yellow
 }
+
+
 /* CSS */
 .buttonText {
   background-image: linear-gradient(
@@ -143,6 +146,7 @@ export default {
   flex-direction: column;
   gap: 20px;
 }
+
 #sandra-mynd {
   max-width: 100%;
   border-radius: 40px;
@@ -165,10 +169,6 @@ export default {
   justify-content: center;
   align-items: center;
   gap: 40px;
-}
-
-.page-container {
-  background-color: black;
 }
 
 section {
