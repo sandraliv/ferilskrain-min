@@ -23,20 +23,18 @@ export default defineComponent({
   data() {
     return {
       backgroundImage: "linear-gradient(-90deg, #0f2f4e, #7f7e85)",
-      color: "white"
+      color: "white",
     };
   },
   computed: {
     where_am_i(): boolean {
-      return this.$route.name === 'Home'
+      return this.$route.name === "Home";
     },
     dynamicStyle() {
       // Dynamically generate styles based on where i am
       return {
-        backgroundImage: this.where_am_i
-          ? this.backgroundImage
-          : "none",
-          color: this.color
+        backgroundImage: this.where_am_i ? this.backgroundImage : "none",
+        color: this.where_am_i ? this.color : "black",
       };
     },
   },
@@ -49,6 +47,5 @@ export default defineComponent({
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 </style>

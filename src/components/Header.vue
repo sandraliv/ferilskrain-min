@@ -71,6 +71,7 @@ header {
   font-family: newFont;
   z-index: 10;
   height: 63px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo {

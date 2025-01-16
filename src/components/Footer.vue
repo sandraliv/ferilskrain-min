@@ -2,12 +2,7 @@
 <template>
   <footer class="footer">
     <div class="foot"></div>
-    <p>&copy; {{ currentYear }} Sandra's Company. All rights reserved.</p>
-    <nav>
-      <a href="https://example.com/about" target="_blank">About</a> |
-      <a href="https://example.com/contact" target="_blank">Contact</a> |
-      <a href="https://example.com/privacy" target="_blank">Privacy Policy</a>
-    </nav>
+    <p>&copy; {{ currentYear }} Sandra Corp. All rights reserved.</p>
   </footer>
 </template>
 

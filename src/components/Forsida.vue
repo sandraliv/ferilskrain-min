@@ -33,12 +33,36 @@
       </button>
     </div>
   </div>
-  <div class="um-mig">
-    <div class="box-about-me">
-      <section>
-        <p>Forritunarmál sem ég kann</p>
-        <p>Java, Python, C, SQL, JavaScript, Typescript, R</p>
-      </section>
+  <div class="um-mig extra">
+    <div class="flex-it">
+      <div class="box-about-me">
+        <section class="haefni">
+          <p><strong>Hæfni</strong></p>
+          <p>Forritunarmál: Java, Python, SQL, JavaScript, Typescript, C</p>
+          <p>Framendi:</p>
+          <p>HTML, CSS/SCSS, JavaScript, Typescript, Vue.js, Thymeleaf</p>
+          <p>Bakendi:</p>
+          <p>Java Spring (+ Thymeleaf), PostgreSQL, SQLite, Node.js</p>
+        </section>
+      </div>
+      <div class="box-about-me">
+        <section class="haefni">
+          <p><strong>Draumastarfið mitt</strong></p>
+          <p>
+            - Hef lært það að mér finnst ótrúlega gaman að gera vefþjónustur
+            (API's) og tel mig vera mjög færa í slíkri smíði
+          </p>
+          <p>
+            - Finnst framendavinnsla mjög skemmtileg líka og væri draumurinn að
+            vinna sem full-stack í framtíðinni
+          </p>
+          <p>
+            - Á auðvelt með að læra nýja hluti og er dugleg, vil komast í starf
+            þar sem ég fæ tækifæri til að sýna og efla færni mína, læra af nýju
+            fólki og fá tækifæri til að verða betri.
+          </p>
+        </section>
+      </div>
     </div>
   </div>
 </template>
@@ -65,6 +89,17 @@ export default {
 </script>
 
 <style scoped>
+.flex-it {
+  justify-content: center;
+  max-width: 740px;
+  display: flex;
+  gap: 40px;
+}
+.um-mig.extra {
+  display: flex;
+  justify-content: center;
+}
+
 .bounce-enter-active {
   animation: bounce-in 0.5s;
 }
@@ -83,13 +118,20 @@ export default {
   }
 }
 
+.haefni {
+  font-size: 14px;
+  max-width: 500px;
+}
+
+.haefni p {
+  margin: 0;
+}
 #welcome {
   font-size: 30px;
   padding: 0;
   margin: 0;
-  color: yellow
+  color: yellow;
 }
-
 
 /* CSS */
 .buttonText {
@@ -150,16 +192,14 @@ export default {
 #sandra-mynd {
   max-width: 100%;
   border-radius: 40px;
-  box-shadow: 0 0 5px 1px rgba(0, 1, 186, 0.5);
 }
 
 .box-about-me {
-  max-width: 700px;
-  border: 1px solid gray;
-  box-shadow: 0px 0px 4px 1.8px rgb(146, 172, 212);
+  max-width: 500px;
   width: fit-content;
   padding: 20px;
   border-radius: 4px;
+  background-color: #677686;
 }
 
 .um-mig {
@@ -169,15 +209,17 @@ export default {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  font-family: newFont;
+  margin-top: 30px;
 }
 
 section {
-  font-family: myFont;
+  font-family: newFont;
   font-weight: 300;
 }
 
 p {
-  font-family: myFont;
+  font-family: newFont;
   font-weight: 300;
 }
 </style>
