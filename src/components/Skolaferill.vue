@@ -180,6 +180,10 @@ export default defineComponent({
   word-spacing: normal;
 }
 
+.about-section {
+  padding: 50px;
+}
+
 .button-67:hover {
   background: #dcdce0;
   box-shadow:

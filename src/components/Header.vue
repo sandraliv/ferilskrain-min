@@ -69,6 +69,8 @@ header {
   position: sticky;
   top: 0; /* Makes it stick to the top of the viewport */
   font-family: newFont;
+  z-index: 10;
+  height: 63px;
 }
 
 .logo {

@@ -1,5 +1,29 @@
 <template>
   <div class="um-mig">
+    <div class="box-about-me">
+      <section>
+        <p id="welcome">Hæ, velkomin á síðuna mína!</p>
+        <p>
+          Ég heiti Sandra Liv og er (í júní orðin) tölvunarfræðingur (á einn
+          áfanga eftir). Ég er 28 ára, spila tölvuleiki, þykist spila á píanó og
+          finnst gaman að forrita e-ð skemmtilegt. Ég er líka með B.A. gráðu í
+          félagsráðgjöf.
+        </p>
+        <p>
+          Ég setti upp þessa síðu aðallega til að leika mér og til að læra
+          forrita með Vue (og fikta með TypeScript). Þessi vefur minn er ætlaður
+          til að sýna hæfni mína í forritun og þá vefforritun sérstaklega. Ég
+          bjó einnig til vefþjónustu með Java Spring sem sækir öll gögn er
+          varðar námsferillinn minn, en ég tými ekki að borga hýsingu fyrir hana
+          þannig ég gerði bara static json gögn á meðan. Þessi vefur er hýstur á
+          Render (free instance), gerður með Vue3 framenda, skrifaður að hluta
+          með Typescript. Innan skamms verður hægt að ýta
+          <a href="">hér</a> fyrir sömu vefsíðu nema með Angular framenda og
+          <a href="">hér</a> fyrir React.
+        </p>
+      </section>
+    </div>
+
     <div class="myndabox">
       <Transition name="bounce">
         <img v-show="showImage" id="sandra-mynd" src="@/assets/mynd.jpg" />
@@ -8,25 +32,14 @@
         {{ buttonText }}
       </button>
     </div>
-    <section>
-      <h2 @click="scrollToSection('sec-3')">Um mig</h2>
-      <p class="box-about-me">
-        Ég heiti Sandra Liv Sigurðardóttir og er 28 ára tölvunarfræðinemi. Í
-        frítímanum mínum finnst mér gaman að spila á rafmagnspíanóið mitt, spila
-        tölvuleiki, prjóna og forrita e-ð skemmtilegt eins og þessa vefsíðu. Ég
-        er einum áfanga frá því að ljúka tölvunarfræði námi mínu en þar að auki
-        er ég með B.A. í félagsráðgjöf. Mér finnst sérstaklega gaman að forrita,
-        leysa vandamál, hanna og þróa.
-      </p>
-      <p class="box-about-me">
-        Þessi vefur minn er ætlaður til að sýna hæfni mína í forritun og þá
-        vefforritun sérstaklega. Ég bjó einnig til vefþjónustu (API) með Java
-        Spring sem sækir öll gögn er varðar námsferilinn minn. Hún keyrir á
-        Render og þessi vefur er með gerður með Vue framenda, skrifaður með
-        Typescript. Ýtið <a href="">hér</a> fyrir Angular framework og
-        <a href="">hér</a> fyrir Thymeleaf template framenda.
-      </p>
-    </section>
+  </div>
+  <div class="um-mig">
+    <div class="box-about-me">
+      <section>
+        <p>Forritunarmál sem ég kann</p>
+        <p>Java, Python, C, SQL, JavaScript, Typescript, R</p>
+      </section>
+    </div>
   </div>
 </template>
 
@@ -51,7 +64,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .bounce-enter-active {
   animation: bounce-in 0.5s;
 }
@@ -70,6 +83,11 @@ export default {
   }
 }
 
+#welcome {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
 /* CSS */
 .buttonText {
   background-image: linear-gradient(
@@ -132,18 +150,33 @@ export default {
 }
 
 .box-about-me {
-  max-width: 300px;
+  max-width: 700px;
+  border: 1px solid gray;
+  box-shadow: 0px 0px 4px 1.8px rgb(146, 172, 212);
+  width: fit-content;
+  padding: 20px;
+  border-radius: 4px;
 }
+
 .um-mig {
   display: flex; /* Use flexbox for layout inside */
   flex-direction: row; /* Stack content vertically */
   text-align: left;
   justify-content: center;
   align-items: center;
+  gap: 40px;
+}
+
+.page-container {
+  background-color: black;
 }
 
 section {
-  padding: 50px;
+  font-family: myFont;
+  font-weight: 300;
+}
+
+p {
   font-family: myFont;
   font-weight: 300;
 }

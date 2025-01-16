@@ -37,11 +37,14 @@ body {
 }
 
 .page-container {
-  min-height: calc(100vh - 155.2px);
+  min-height: calc(100vh - 126.4px);
   display: flex;
   flex-direction: column;
 }
 
 .contains {
+  display: flex;
   flex: 1;
+  justify-content: center;
+  flex-direction: column;
 }

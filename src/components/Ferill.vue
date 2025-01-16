@@ -56,6 +56,7 @@ export default defineComponent({
 .about-section {
   background-image: linear-gradient(-90deg, #0f2f4e, #7f7e85);
   color: #fff;
+  padding: 50px;
 }
 
 .box-about-me {
@@ -73,7 +74,6 @@ export default defineComponent({
   align-items: center; /* Center child items horizontally */
   text-align: left;
   justify-content: center;
-  height: 300px;
 }
 
 .um-mig:last-child {
