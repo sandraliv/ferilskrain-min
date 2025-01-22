@@ -6,12 +6,15 @@
   <div class="um-mig">
     <div class="box-about-me">
       <section>
+        <p id="about-mee">Um mig</p>
         <p>
-          Ég heiti Sandra Liv og er (í júní orðin) tölvunarfræðingur (á einn
-          áfanga eftir). Ég er 28 ára, spila tölvuleiki, þykist spila á píanó og
-          finnst gaman að forrita e-ð skemmtilegt. Ég er líka með B.A. gráðu í
-          félagsráðgjöf.
+          - Ég er (í júní orðin) tölvunarfræðingur (er í síðasta áfanganum).
         </p>
+        <p>
+          - Ég er 28 ára, spila tölvuleiki, þykist spila á píanó og finnst gaman
+          að forrita e-ð skemmtilegt.
+        </p>
+        <p>- Ég er með B.A. gráðu í félagsráðgjöf.</p>
         <p>
           Ég setti upp þessa síðu aðallega til að leika mér og til að læra
           forrita með Vue (og fikta með TypeScript). Þessi vefur minn er ætlaður
@@ -38,34 +41,48 @@
   </div>
   <div class="um-mig extra">
     <div class="flex-it">
-      <div class="box-about-me">
+      <div class="box-about-me 2">
         <section class="haefni">
-          <p><strong>Hæfni</strong></p>
-          <p>Forritunarmál: Java, Python, SQL, JavaScript, Typescript, C</p>
-          <p>Framendi:</p>
-          <p>HTML, CSS/SCSS, JavaScript, Typescript, Vue.js, Thymeleaf</p>
-          <p>Bakendi:</p>
-          <p>Java Spring (+ Thymeleaf), PostgreSQL, SQLite, Node.js</p>
+          <p id="about-mee">Bakendakista</p>
+          <img
+            v-for="(skill, index) in skills"
+            :key="index"
+            class="small-logos"
+            :src="skill.src"
+            :alt="skill.alt"
+          />
         </section>
       </div>
-      <div class="box-about-me">
+      <div class="box-about-me 2">
         <section class="haefni">
-          <p><strong>Draumastarfið mitt</strong></p>
-          <p>
-            - Hef lært það að mér finnst ótrúlega gaman að gera vefþjónustur
-            (API's) og tel mig vera mjög færa í slíkri smíði
-          </p>
-          <p>
-            - Finnst framendavinnsla mjög skemmtileg líka og væri draumurinn að
-            vinna sem full-stack í framtíðinni
-          </p>
-          <p>
-            - Á auðvelt með að læra nýja hluti og er dugleg, vil komast í starf
-            þar sem ég fæ tækifæri til að sýna og efla færni mína, læra af nýju
-            fólki og fá tækifæri til að verða betri.
-          </p>
+          <p id="about-mee">Framendakista</p>
+          <img
+            v-for="(skill, index) in skills_fe"
+            :key="index"
+            class="small-logos"
+            :src="skill.src"
+            :alt="skill.alt"
+          />
         </section>
       </div>
+    </div>
+  </div>
+  <div class="um-mig-extra extra">
+    <div id="boxz" class="box-about-me">
+      <p id="about-mee">Draumastarf</p>
+      <p>
+        - Hef lært það að mér finnst ótrúlega gaman að gera vefþjónustur (API's)
+        og tel mig vera mjög færa í slíkri smíði
+      </p>
+      <p>
+        - Finnst framendavinnsla mjög skemmtileg líka og væri draumurinn að
+        vinna sem full-stack í framtíðinni
+      </p>
+      <p>
+        - Á auðvelt með að læra nýja hluti og er dugleg, vil komast í starf þar
+        sem ég fæ tækifæri til að sýna og efla færni mína, læra af nýju fólki og
+        fá tækifæri til að verða betri.
+      </p>
     </div>
   </div>
 </template>
@@ -84,6 +101,55 @@ export default {
   },
   data() {
     return {
+      skills: [
+        { src: require("../assets/python.png"), alt: "Python Logo" },
+        { src: require("../assets/hiclipart.com.png"), alt: "Random Logo" },
+        {
+          src: require("../assets/javascript-39404.png"),
+          alt: "JavaScript Logo",
+        },
+        {
+          src: require("../assets/typescript-512.png"),
+          alt: "TypeScript Logo",
+        },
+        {
+          src: require("../assets/pngwing.png"),
+          alt: "Spring Boot logo",
+        },
+        {
+          src: require("../assets/docker-logo-png-transparent.png"),
+          alt: "Spring Boot logo",
+        },
+        {
+          src: require("../assets/6729f20412c00-SQLite.png"),
+          alt: "Spring Boot logo",
+        },
+        {
+          src: require("../assets/fastapi-seeklogo.png"),
+          alt: "FastAPI logo",
+        },
+        {
+          src: require("../assets/node-js.svg"),
+          alt: "FastAPI logo",
+        },
+        {
+          src: require("../assets/c-original.svg"),
+          alt: "C language logo",
+        },
+      ],
+      skills_fe: [
+        {
+          src: require("../assets/thymeleaf-logo.png"),
+          alt: "Thymeleaf Logo",
+        },
+        {
+          src: require("../assets/logo.png"),
+          alt: "Vue.js logo",
+        },
+        { src: require("../assets/CSS-Transparent-Logo.png"), alt: "CSS Logo" },
+        { src: require("../assets/html.png"), alt: "HTML Logo" },
+        { src: require("../assets/sass.png"), alt: "Sass Logo" },
+      ],
       showImage: true,
       buttonText: "Fela mynd",
     };
@@ -92,15 +158,38 @@ export default {
 </script>
 
 <style scoped>
+#boxz {
+  max-width: 940px;
+  min-width: 940px;
+}
+
+.um-mig-extra.extra {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.box-about-me .small-logos {
+  height: 128px;
+  width: 128px;
+  padding: 4px;
+}
 .flex-it {
   justify-content: center;
-  max-width: 740px;
+  max-width: 940px;
   display: flex;
   gap: 40px;
 }
 .um-mig.extra {
   display: flex;
   justify-content: center;
+}
+
+#about-mee {
+  color: rgba(5, 2, 39, 0.26);
+  font-size: 30px;
+  margin: 0;
+  font-weight: 500;
 }
 
 .bounce-enter-active {
@@ -126,9 +215,6 @@ export default {
   max-width: 500px;
 }
 
-.haefni p {
-  margin: 0;
-}
 #welcome {
   font-size: 80px;
   padding: 0;
@@ -139,12 +225,7 @@ export default {
 
 /* CSS */
 .buttonText {
-  background-image: linear-gradient(
-    92.88deg,
-    #0f2f4e 6.16%,
-    /* Second color */ #47566a 45%,
-    /* First color */ #7f7e85 70%
-  );
+  background-color: rgba(5, 2, 39, 0.26);
 
   border-radius: 8px;
   border-style: none;
@@ -199,8 +280,8 @@ export default {
 }
 
 .box-about-me {
-  max-width: 500px;
-  width: fit-content;
+  max-width: 700px;
+  width: 50%;
   padding: 20px;
   border-radius: 10px;
   background-color: #677686;
@@ -220,6 +301,8 @@ export default {
 section {
   font-family: newFont;
   font-weight: 300;
+  padding: 10px;
+  color: rgba(215, 223, 235, 0.836);
 }
 
 p {

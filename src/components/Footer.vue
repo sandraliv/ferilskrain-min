@@ -39,7 +39,9 @@ export default {
 .footer a:hover {
   text-decoration: underline;
 }
-
+.footer p {
+  font-weight: 400;
+}
 .foot {
   display: flex;
 }
