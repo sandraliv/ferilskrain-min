@@ -23,7 +23,7 @@ export default defineComponent({
   data() {
     return {
       backgroundImage: "linear-gradient(-90deg, #0f2f4e, #7f7e85)",
-      color: "white",
+      color: "#F5F3F5",
     };
   },
   computed: {

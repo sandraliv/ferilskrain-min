@@ -41,7 +41,6 @@ export default defineComponent({
       this.$i18n.locale = language;
     },
   },
-
 });
 </script>
 
@@ -49,7 +48,7 @@ export default defineComponent({
 #sandra-mynd {
   max-width: 30%;
   margin-bottom: 30px;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 0 5px 1px rgba(0, 1, 186, 0.5);
 }
 
@@ -77,7 +76,8 @@ export default defineComponent({
   max-height: 400px;
   height: 100%;
   min-height: 348px;
-padding: 3px;}
+  padding: 3px;
+}
 
 .um-mig:last-child {
   margin-bottom: 40px;

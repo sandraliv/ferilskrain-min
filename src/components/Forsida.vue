@@ -1,8 +1,11 @@
 <template>
+  <section>
+    <p id="welcome">Velkomin</p>
+    <hr style="width: 70%; color: #2e2d5e" />
+  </section>
   <div class="um-mig">
     <div class="box-about-me">
       <section>
-        <p id="welcome">Hæ, velkomin á síðuna mína!</p>
         <p>
           Ég heiti Sandra Liv og er (í júní orðin) tölvunarfræðingur (á einn
           áfanga eftir). Ég er 28 ára, spila tölvuleiki, þykist spila á píanó og
@@ -127,10 +130,11 @@ export default {
   margin: 0;
 }
 #welcome {
-  font-size: 30px;
+  font-size: 80px;
   padding: 0;
-  margin: 0;
-  color: yellow;
+  margin: 30px;
+  color: rgba(5, 2, 39, 0.26);
+  font-weight: 600;
 }
 
 /* CSS */
@@ -191,14 +195,14 @@ export default {
 
 #sandra-mynd {
   max-width: 100%;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 
 .box-about-me {
   max-width: 500px;
   width: fit-content;
   padding: 20px;
-  border-radius: 4px;
+  border-radius: 10px;
   background-color: #677686;
 }
 

@@ -157,7 +157,7 @@ export default defineComponent({
   align-items: center;
   background: #cbcbe2;
   border: 0;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow:
     -10px -10px 30px 0 #fff,
     10px 10px 30px 0 #1d0dca17;
@@ -223,7 +223,7 @@ export default defineComponent({
   box-shadow: 0px 0px 4px 1.8px rgb(146, 172, 212);
   width: fit-content;
   margin: 20px auto 20px auto;
-  border-radius: 4px;
+  border-radius: 10px;
   flex-direction: column;
   width: 837;
 }
@@ -249,7 +249,7 @@ td:nth-child(1) {
 }
 #sandra-mynd {
   max-width: 20%;
-  border-radius: 40px;
+  border-radius: 10px;
   box-shadow: 0 0 5px 1px rgba(0, 1, 186, 0.5);
 }
 

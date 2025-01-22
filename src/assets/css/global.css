@@ -24,7 +24,7 @@ html {
 
 @font-face {
   font-family: "newFont";
-  src: url("@/assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+  src: url("@/assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf")
     format("truetype");
 }
 
