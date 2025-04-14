@@ -1,12 +1,12 @@
 <template>
   <section>
-    <p id="welcome">Velkomin</p>
+    <p id="welcome">{{ $t("welcome") }}</p>
     <hr style="width: 70%; color: #2e2d5e" />
   </section>
   <div class="um-mig">
     <div class="box-about-me">
       <section>
-        <p id="about-mee">Um mig</p>
+        <p id="about-mee">{{ $t("about_me") }}</p>
         <p>
           - Ég er (í júní orðin) tölvunarfræðingur (er í síðasta áfanganum).
         </p>

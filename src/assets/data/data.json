@@ -220,56 +220,6 @@
       "slug": "felagsradgjof",
       "classes": [
         {
-          "name": "Greining og hönnun stafrænna rása",
-          "id": "TÖV201G",
-          "grade": 8.0,
-          "credits": 6,
-          "semester": "maí, 2022"
-        },
-        {
-          "name": "Greining og hönnun stafrænna rása - verklegt",
-          "id": "STÆ202G",
-          "grade": 9.5,
-          "credits": 2,
-          "semester": "júní, 2022"
-        },
-        {
-          "name": "Líkindareikningur og tölfræði",
-          "id": "STÆ203G",
-          "grade": 5.5,
-          "credits": 6,
-          "semester": "júní, 2022"
-        },
-        {
-          "name": "Tölvunarfræði 1",
-          "id": "TÖL101G",
-          "grade": 8.0,
-          "credits": 6,
-          "semester": "des, 2022"
-        },
-
-        {
-          "name": "Stærðfræðimynstur",
-          "id": "TÖL104G",
-          "grade": 8.0,
-          "credits": 8,
-          "semester": "des, 2022"
-        },
-        {
-          "name": "Vefforritun 1",
-          "id": "TÖL107G",
-          "grade": 9.0,
-          "credits": 8,
-          "semester": "des, 2022"
-        },
-        {
-          "name": "Hagnýt stærðfræðigreining",
-          "id": "STÆ105G",
-          "grade": 7.5,
-          "credits": 8,
-          "semester": "des, 2022"
-        },
-        {
           "name": "Viðmótsforritun",
           "id": "HBV201G",
           "grade": 9.0,
@@ -345,6 +295,56 @@
           "grade": 8.0,
           "credits": 6,
           "semester": "des, 2024"
+        },
+        {
+          "name": "Greining og hönnun stafrænna rása",
+          "id": "TÖV201G",
+          "grade": 8.0,
+          "credits": 6,
+          "semester": "maí, 2022"
+        },
+        {
+          "name": "Greining og hönnun stafrænna rása - verklegt",
+          "id": "STÆ202G",
+          "grade": 9.5,
+          "credits": 2,
+          "semester": "maí, 2022"
+        },
+        {
+          "name": "Líkindareikningur og tölfræði",
+          "id": "STÆ203G",
+          "grade": 5.5,
+          "credits": 6,
+          "semester": "maí, 2022"
+        },
+        {
+          "name": "Tölvunarfræði 1",
+          "id": "TÖL101G",
+          "grade": 8.0,
+          "credits": 6,
+          "semester": "des, 2022"
+        },
+
+        {
+          "name": "Stærðfræðimynstur",
+          "id": "TÖL104G",
+          "grade": 8.0,
+          "credits": 8,
+          "semester": "des, 2022"
+        },
+        {
+          "name": "Vefforritun 1",
+          "id": "TÖL107G",
+          "grade": 9.0,
+          "credits": 8,
+          "semester": "des, 2022"
+        },
+        {
+          "name": "Hagnýt stærðfræðigreining",
+          "id": "STÆ105G",
+          "grade": 7.5,
+          "credits": 8,
+          "semester": "des, 2022"
         }
       ]
     }

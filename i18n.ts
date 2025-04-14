@@ -3,6 +3,8 @@ import { createI18n } from "vue-i18n";
 // Define translations for each language
 const messages = {
   en: {
+    welcome: "Welcome",
+    about_me: "About me",
     career: "Career",
     askja: {
       title: "Askja - Car dealership",
@@ -43,6 +45,8 @@ const messages = {
     },
   },
   is: {
+    about_me: "Um mig",
+    welcome: "Velkomin",
     career: "Starfsferill",
     askja: {
       title: "Bílaumboðið Askja",

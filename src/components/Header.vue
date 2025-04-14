@@ -61,7 +61,6 @@ export default {
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-image: linear-gradient(-90deg, #0f2f4e, #7f7e85);
   color: #fff;
