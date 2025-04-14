@@ -3,23 +3,19 @@
     <div class="box-about-me">
       <section>
         <p id="about-mee">{{ $t("about_me") }}</p>
+        <p>- Ég er að útskrifast sem tölvunarfræðingur næstkomandi júní.</p>
         <p>
-          - Ég er (í júní orðin) tölvunarfræðingur (er í síðasta áfanganum).
-        </p>
-        <p>
-          - Ég er 28 ára, spila tölvuleiki, þykist spila á píanó og finnst gaman
-          að forrita e-ð skemmtilegt.
+          - Ég er 28 ára, spila tölvuleiki, finnst gaman að forrita og leysa
+          verkefni.
         </p>
         <p>- Ég er með B.A. gráðu í félagsráðgjöf.</p>
         <p>
           Ég setti upp þessa síðu aðallega til að leika mér og til að læra
-          forrita með Vue (og fikta með TypeScript). Þessi vefur minn er ætlaður
-          til að sýna hæfni mína í forritun og þá vefforritun sérstaklega. Ég
-          bjó einnig til vefþjónustu með Java Spring sem sækir öll gögn er
-          varðar námsferillinn minn, en ég tými ekki að borga hýsingu fyrir hana
-          þannig ég gerði bara static json gögn á meðan. Þessi vefur er hýstur á
-          Render (free instance), gerður með Vue3 framenda, skrifaður að hluta
-          með Typescript. Innan skamms verður hægt að ýta
+          forrita með Vue og nota Typescript. Ég bjó einnig til vefþjónustu með
+          Java Spring sem sækir öll gögn er varðar námsferillinn minn, en ég
+          tými ekki að borga hýsingu fyrir hana þannig ég gerði bara static json
+          gögn á meðan. Þessi vefur er hýstur á Render gerður með Vue framenda,
+          skrifaður með Typescript. Innan skamms verður hægt að ýta
           <a href="">hér</a> fyrir sömu vefsíðu nema með Angular framenda og
           <a href="">hér</a> fyrir React.
         </p>
