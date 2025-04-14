@@ -41,8 +41,8 @@ export default {
     },
     logoLanguage() {
       return this.$i18n.locale === "is"
-        ? require("@/assets/world.png")
-        : require("@/assets/united-kingdom.png");
+        ? require("@/assets/united-kingdom.png")
+        : require("@/assets/world.png");
     },
     changeLanguage() {
       this.$i18n.locale === "is"
@@ -71,6 +71,7 @@ header {
   z-index: 10;
   height: 63px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
 }
 
 .logo {

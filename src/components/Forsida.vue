@@ -1,8 +1,4 @@
 <template>
-  <section>
-    <p id="welcome">{{ $t("welcome") }}</p>
-    <hr style="width: 70%; color: #2e2d5e" />
-  </section>
   <div class="um-mig">
     <div class="box-about-me">
       <section>
@@ -34,9 +30,6 @@
       <Transition name="bounce">
         <img v-show="showImage" id="sandra-mynd" src="@/assets/mynd.jpg" />
       </Transition>
-      <button class="buttonText" role="button" @click="toggleImage">
-        {{ buttonText }}
-      </button>
     </div>
   </div>
   <div class="um-mig extra">
@@ -67,24 +60,6 @@
       </div>
     </div>
   </div>
-  <div class="um-mig-extra extra">
-    <div id="boxz" class="box-about-me">
-      <p id="about-mee">Draumastarf</p>
-      <p>
-        - Hef lært það að mér finnst ótrúlega gaman að gera vefþjónustur (API's)
-        og tel mig vera mjög færa í slíkri smíði
-      </p>
-      <p>
-        - Finnst framendavinnsla mjög skemmtileg líka og væri draumurinn að
-        vinna sem full-stack í framtíðinni
-      </p>
-      <p>
-        - Á auðvelt með að læra nýja hluti og er dugleg, vil komast í starf þar
-        sem ég fæ tækifæri til að sýna og efla færni mína, læra af nýju fólki og
-        fá tækifæri til að verða betri.
-      </p>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -93,12 +68,7 @@ export default {
   mounted() {
     this.scrollToSection();
   },
-  methods: {
-    toggleImage() {
-      this.showImage = !this.showImage;
-      this.buttonText = this.showImage ? "Fela mynd" : "Sýna mynd";
-    },
-  },
+
   data() {
     return {
       skills: [
@@ -186,7 +156,7 @@ export default {
 }
 
 #about-mee {
-  color: rgba(5, 2, 39, 0.26);
+  color: rgb(209, 207, 223);
   font-size: 30px;
   margin: 0;
   font-weight: 500;
@@ -268,7 +238,7 @@ export default {
 }
 
 .myndabox {
-  max-width: 200px;
+  max-width: 250px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -280,11 +250,11 @@ export default {
 }
 
 .box-about-me {
-  max-width: 700px;
+  max-width: 652px;
   width: 50%;
   padding: 20px;
   border-radius: 10px;
-  background-color: #677686;
+  background-color: #2a4d70;
 }
 
 .um-mig {
@@ -303,6 +273,10 @@ section {
   font-weight: 300;
   padding: 10px;
   color: rgba(215, 223, 235, 0.836);
+}
+
+.flex-it {
+  margin-bottom: 40px;
 }
 
 p {

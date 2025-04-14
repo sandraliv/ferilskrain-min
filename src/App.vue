@@ -22,7 +22,6 @@ export default defineComponent({
   },
   data() {
     return {
-      backgroundImage: "linear-gradient(-90deg, #0f2f4e, #7f7e85)",
       color: "#F5F3F5",
     };
   },
@@ -33,7 +32,7 @@ export default defineComponent({
     dynamicStyle() {
       // Dynamically generate styles based on where i am
       return {
-        backgroundImage: this.where_am_i ? this.backgroundImage : "none",
+        backgroundImage: this.where_am_i ? "none" : "none",
         color: this.where_am_i ? this.color : "black",
       };
     },
