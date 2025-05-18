@@ -291,8 +291,15 @@
         },
         {
           "name": "Hugbúnaðarverkefni 1",
-          "id": "TÖL104G",
+          "id": "HBV501G",
           "grade": 8.0,
+          "credits": 6,
+          "semester": "des, 2024"
+        },
+        {
+          "name": "Hugbúnaðarverkefni 2",
+          "id": "HBV601G",
+          "grade": 9.0,
           "credits": 6,
           "semester": "des, 2024"
         },

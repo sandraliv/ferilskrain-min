@@ -3,22 +3,17 @@
     <div class="box-about-me">
       <section>
         <p id="about-mee">{{ $t("about_me") }}</p>
-        <p>- Ég er að útskrifast sem tölvunarfræðingur næstkomandi júní.</p>
+        <p>- Ég er 28 ára,finnst gaman að forrita og læra nýja hluti.</p>
         <p>
-          - Ég er 28 ára, spila tölvuleiki, finnst gaman að forrita og leysa
-          verkefni.
+          - Ég er með B.A. gráðu í félagsráðgjöf og útskrifast sem
+          tölvunarfræðingur í júní.
         </p>
-        <p>- Ég er með B.A. gráðu í félagsráðgjöf.</p>
         <p>
-          Ég setti upp þessa síðu aðallega til að leika mér og til að læra
-          forrita með Vue og nota Typescript. Ég bjó einnig til vefþjónustu með
-          Java Spring sem sækir öll gögn er varðar námsferillinn minn, en ég
-          tými ekki að borga hýsingu fyrir hana þannig ég gerði bara static json
-          gögn á meðan. Þessi vefur er hýstur á Render gerður með Vue framenda,
-          skrifaður með Typescript. Innan skamms verður hægt að ýta
-          <a href="">hér</a> fyrir sömu vefsíðu nema með Angular framenda og
-          <a href="">hér</a> fyrir React.
+          Þessi vefur er hýstur á Render gerður með Vue.js, skrifaður með
+          Typescript.
         </p>
+        <p>ATH þetta er vefur í vinnslu</p>
+        <p>TAKK fyrir að koma í heimsókn :)</p>
       </section>
     </div>
 
@@ -91,6 +86,14 @@ export default {
           alt: "Spring Boot logo",
         },
         {
+          src: require("../assets/icons8-kotlin-96.png"),
+          alt: "Spring Boot logo",
+        },
+        {
+          src: require("../assets/android.svg"),
+          alt: "Spring Boot logo",
+        },
+        {
           src: require("../assets/fastapi-seeklogo.png"),
           alt: "FastAPI logo",
         },
@@ -152,7 +155,7 @@ export default {
 }
 
 #about-mee {
-  color: rgb(209, 207, 223);
+  color: rgb(64, 53, 134);
   font-size: 30px;
   margin: 0;
   font-weight: 500;
@@ -179,6 +182,10 @@ export default {
 .haefni {
   font-size: 14px;
   max-width: 500px;
+}
+
+.haefni p {
+  padding-bottom: 20px;
 }
 
 #welcome {
@@ -250,7 +257,7 @@ export default {
   width: 50%;
   padding: 20px;
   border-radius: 10px;
-  background-color: #2a4d70;
+  background-color: #d6d8da;
 }
 
 .um-mig {
@@ -265,10 +272,8 @@ export default {
 }
 
 section {
-  font-family: newFont;
-  font-weight: 300;
   padding: 10px;
-  color: rgba(215, 223, 235, 0.836);
+  color: rgba(39, 33, 128, 0.836);
 }
 
 .flex-it {
@@ -277,6 +282,6 @@ section {
 
 p {
   font-family: newFont;
-  font-weight: 300;
+  font-weight: 500;
 }
 </style>
